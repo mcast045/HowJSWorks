@@ -1,0 +1,72 @@
+#app {
+    #stack {
+        .callstack_container {
+            
+            .functional-callstack,
+            .stackOverflow {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr;
+                align-items: flex-start;
+                grid-gap: $REM-1;
+                padding: 0 $REM-1;
+                font-size: 1.5rem;
+                .thirdFunction,
+                .secondFunction,
+                .firstFunction,
+                .firstReadLine,
+                .returnCode {
+                    display: block;
+                    border-radius: 10px;
+                    padding: $REM-1;
+                }
+                .c1-r1 {
+                    grid-column: 1 / 3;
+                    height: 100%;
+                }
+                .c2-r1 {
+                    height: 100%;
+                    .successful-returnCode-container,
+                    .working-overflow-container {
+                        height: 95%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                    }
+                    .working-overflow-container {
+                        width: 100%;
+                    }
+                }
+                .overflow-returnCode-container {
+                    height: 100%;
+                    .csLimit {
+                        background: #F32013;
+                        padding: .5rem $REM-1;
+                        border-radius: $REM-1;
+                    }
+                }
+                .call-cell {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    .frame-container {
+                        height: 100%;
+                        justify-self: space-between;
+                    }
+                    .frame,
+                    .overflowFrame {
+                        background-color: $bg-light-1;
+                        color: $bg-dark-1;
+                        margin: $REM-1 0;
+                        height: 5rem;
+                        width: 20rem;
+                        margin: $REM-1 auto;
+                    }
+                    .frame {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+}

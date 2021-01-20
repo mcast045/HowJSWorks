@@ -1,0 +1,32 @@
+#app {
+    #stack {
+        .callstack_container {
+            .header-section-container {
+                width: 100%;
+                .border-line {
+                    width: 100%;
+                    height: 1px;
+                    background-color: $bg-light-1;
+    
+                    .tick {
+                        height: $REM-3;
+                        background-color: $bg-light-1;
+                        width: 1px;
+                        position: absolute;
+                        top: -3rem;
+                    }
+                    .uptick-right {
+                        right: 0;
+                    }
+                    .downtick-left {
+                        top: 0;
+                    }
+                    .downtick-right {
+                        top: 0;
+                        right: 0;
+                    }
+                }       
+            }
+        }
+    }
+}

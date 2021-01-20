@@ -1,0 +1,16 @@
+@media only screen and (max-width: 1328px) {
+    .responsive-text {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .responsive-text {
+        font-size: 1.2rem;
+    }
+}
+
+@import "./intro";
+@import "./landing";
+@import "./memory";
+@import './callstack';
+@import './header';

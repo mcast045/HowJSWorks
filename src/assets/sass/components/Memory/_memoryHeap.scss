@@ -1,0 +1,58 @@
+#app {
+    #memory {
+        .memory-container {
+            &_heap {
+
+                .heap-cell {
+                    transform: scale(1.3);
+                    display: grid;
+                    grid-template-columns: repeat(7, 1fr);
+                    grid-template-rows: repeat(3, 1fr);
+
+                    .memory {
+                        margin: $REM-1 .5rem;
+                        width: 5rem;
+                        height: 5rem;
+                        background: $bg-dark-2;
+                        border-radius: 50%;
+
+                        .globeIcon {
+                            height: 100%;
+                            font-size: 2.5rem;
+                        }
+
+                        .data1_1SVG,
+                        .data1_2SVG,
+                        .data2_1SVG,
+                        .data2_2SVG,
+                        .data3_1SVG {
+                            transform: scale(1.3);
+                        }
+
+                        .data1_1SVG {
+                            top: 4rem;
+                            left: -6.3rem;
+                        }
+                        .data1_2SVG {
+                            top: 4.5rem;
+                            left: 5.5rem;
+                        }
+                        .data2_1SVG {
+                            top: 4rem;
+                            left: -6.5rem;
+                        }
+                        .data2_2SVG {
+                            top: 4.5rem;
+                            left: 4rem;
+                        }
+                        .data3_1SVG {
+                            top: 4rem;
+                            left: -6.5rem;
+                        }
+                    }
+                
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+#app {
+    @media only screen and (max-width: 1050px) {
+        #intro {
+            height: initial;
+            padding-bottom: $REM-3;
+            .intro-content_text,
+            .visual-container {
+                width: 80% !important;
+            }
+            .intro-content-container {
+                width: 100%;
+                flex-direction: column;
+            }
+            .visual-container {
+                .flexQueueLoop {
+                    flex-direction: column;
+
+                    .event_loop_panel {
+                        top: 0;
+                        left: -12.5rem;
+                        border-radius: $REM-2 $REM-2 $REM-2 $REM-2;
+                    }
+                }
+            }
+        }
+    }
+    #intro {
+        @media only screen and (max-width: 1658px) {
+            .intro-content_text,
+            .visual-container {
+                width: 45%;
+            }
+            .visual {
+                .stack-container_panel,
+                .heap-container_panel {
+                    z-index: 100;
+                }
+                .heap-container_panel {
+                    transform-origin: top left;
+                    border-radius: 0 $REM-2 $REM-2 $REM-2;
+                    left: 0;
+                    top: 0;
+                }
+                .stack-container_panel {
+                    transform-origin: top right;
+                    border-radius: $REM-2 0 $REM-2 $REM-2;
+                    right: 0;
+                    top: 0;
+                }
+            }
+        }
+        @media only screen and (max-width: 700px) {
+            .visual {
+                flex-direction: column;
+
+                .callStack-container {
+                    width: 100%;
+                }
+
+                .stack-container_panel {
+                    transform-origin: top right;
+                    border-radius: $REM-2 0 $REM-2 $REM-2;
+                    right: 0;
+                    top: 60%;
+                }
+
+                .vertical-line {
+                    background-color: $bg-light-1;
+                    margin: $REM-1 auto;
+                    height: 1px;
+                    width: 85%;
+                }
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            .intro-content_text,
+            .visual-container {
+                height: auto;
+                .webApi-container {
+                    .webApi_panel,
+                    .queue_panel {
+                        height: 125%;
+                    }
+                }
+            }
+            .sectionHeader {
+                font-size: $REM-3;
+            }
+        }
+        @media only screen and (max-width: 393px) {
+            .visual-container {
+                .webApi-container {
+                        .webApi_panel,
+                        .queue_panel {
+                            height: 140%;
+                    }
+                }
+            }
+        }
+    }
+}

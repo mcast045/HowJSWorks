@@ -1,0 +1,14 @@
+#app {
+
+    @media only screen and (max-width: 1370px) {
+        .header {
+            margin-right: $REM-1;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .header {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import './heap&stackcontainers';
+
+#app {
+    #intro {
+        .visual {
+            justify-content: space-evenly;
+            
+            .heap-container_panel,
+            .stack-container_panel {                    
+                position: absolute;
+                top: $REM-2;
+            }
+
+            .heap-container_panel {
+                left: -21rem;
+                transform-origin: bottom right;
+                border-radius: $REM-2 $REM-2 0 $REM-2;
+            }
+
+            .stack-container_panel {
+                right: -21rem;
+                transform-origin: top left;
+                border-radius: 0 $REM-2 $REM-2 $REM-2;
+            }
+
+            .vertical-line {
+                width: 1px;
+                height: 85%;
+                background-color: $bg-light-1;
+                margin: 0 $REM-1;
+            }
+        }
+    }
+}

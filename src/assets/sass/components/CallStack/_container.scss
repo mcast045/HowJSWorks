@@ -1,0 +1,17 @@
+@import './visual';
+@import './header';
+
+#app {
+    #stack {
+        .callstack_container {
+            width: 75%;
+            margin: auto;
+            .stackOverflow {
+                align-items: center;
+            }
+            .functional-callstack_title {
+                font-size: $REM-3;
+            }
+        }
+    }
+}

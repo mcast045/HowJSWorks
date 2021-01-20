@@ -1,0 +1,27 @@
+#app {
+    .header {
+        margin-right: $REM-2; 
+        position: fixed;
+        top: $REM-3;
+        right: 0;
+    
+        &_landing,
+        &_intro,
+        &_memory,
+        &_callstack {
+            display: block;
+            border-radius: 50%;
+            width: $REM-2;
+            height: $REM-2;
+            background-color: $bg-light-1;
+    
+            &:hover {
+                background-color: $bg-light-2;
+            }
+        }
+    
+        & a:not(:first-child):not(:last-child) {
+            margin: 1rem 0;
+        }
+    }
+}

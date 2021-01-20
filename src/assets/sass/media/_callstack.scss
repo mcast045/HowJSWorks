@@ -1,0 +1,78 @@
+#app {
+    #stack {
+        @media only screen and (max-width: 1370px) {
+            .callstack_container {
+                width: 95%;
+            }
+        }
+        .callstack_container {
+            @media only screen and (max-width: 1000px) {
+                .functional-callstack,
+                .stackOverflow {
+                    grid-template-columns: 50% repeat(2, 1fr);
+                    .c2-r1 {
+                        grid-column: 3 / span 1;
+                        grid-row: 1 / span 1;
+
+                        .successful-returnCode-container {
+                            height: 100%;
+                        }
+                    }
+                    .bottom-row {
+                        grid-column: 1 / -1;
+                        grid-row: 2 / -1;
+                    }
+                    .call-cell {
+                        .frame,
+                        .overflowFrame {
+                            width: auto;
+                            padding: 0 $REM-3;
+                        }
+                    }
+                }
+            }
+            @media only screen and (max-width: 650px) {
+                .functional-callstack,
+                .stackOverflow {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(3, auto);
+                    .c2-r1 {
+                        grid-column: 1 / -1;
+                        grid-row: 2 / 3;
+                        .successful-returnCode-container,
+                        .working-overflow-container {
+                            flex-direction: row;
+                        }
+                    }
+                    .bottom-row {
+                        grid-column: 1 / -1;
+                        grid-row: 3 / -1;
+                    }
+                }
+            }
+            @media only screen and (max-width: 450px) {
+                .functional-callstack,
+                .stackOverflow {
+                    .thirdFunction,
+                    .secondFunction,
+                    .firstFunction,
+                    .firstReadLine,
+                    .overflowFunction {
+                        font-size: $REM-1;
+                    }
+                }
+            }
+            .functional-callstack,
+            .stackOverflow {
+                .call-cell {
+                    @media only screen and (max-width: 700px) {
+                        .frame,
+                        .overflowFrame {
+                            padding: 0 $REM-1;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}

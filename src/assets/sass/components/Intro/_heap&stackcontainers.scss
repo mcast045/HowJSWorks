@@ -1,0 +1,27 @@
+@import './heapCell';
+
+#app {
+    #intro{
+        .visual{
+            .heap-container,
+            .callStack-container {
+                flex-direction: column;
+
+                .stack-header {
+                    z-index: 10;
+                }
+
+                .call-cell {
+                    width: 100%;
+                    
+                    .frame {
+                        margin: $REM-1 .5rem;
+                        height: $REM-3;
+                        opacity: 0;
+                        background: $bg-dark-2;
+                    }
+                }
+            }
+        }
+    }
+}

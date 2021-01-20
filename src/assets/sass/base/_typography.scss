@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    color: $bg-light-1;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.responsive-text {
+    font-size: $REM-2;
+}
+
+h1, 
+h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul > li{
+    list-style-type:none;
+}

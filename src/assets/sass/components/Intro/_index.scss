@@ -1,0 +1,14 @@
+@import "./intro";
+
+#app { 
+    #intro {
+        height: $base-height;
+        background: linear-gradient(to bottom right, $bg-dark-1, $bg-dark-2);
+        .intro-content-container {
+            width: 75%;
+            height: calc(100% - 115px);
+            margin: auto;
+            justify-content: space-between;
+        }
+    }
+}

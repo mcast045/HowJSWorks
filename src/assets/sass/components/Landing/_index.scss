@@ -1,0 +1,20 @@
+#app {
+    #landing {
+        height: 100vh;
+        background: url("~@/assets/Svgs/Mountains.svg");
+        background-color: $bg-dark-1;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+
+        .line-drawing {
+            width: 75%;
+            display: block;
+            margin: auto;
+            fill: transparent;
+
+            svg {
+                overflow: visible;
+            }
+        }
+    }
+}

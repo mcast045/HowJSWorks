@@ -1,0 +1,47 @@
+#app {
+    #intro {
+        .visual {
+            .heap-container,
+            .callStack-container {
+                .heap-cell {
+                    display: grid;
+                    grid-template-columns: repeat(7, 1fr);
+                    grid-template-rows: repeat(3, 1fr);
+
+                    .memory {
+                        margin: $REM-1 .5rem;
+                        width: $REM-3;
+                        height: $REM-3;
+                        background: $bg-dark-2;
+                        border-radius: 50%;
+
+                        .data1_1SVG {
+                            top: 1.8rem;
+                            left: -6rem;
+                        }
+                        .data1_2SVG {
+                            top: 1rem;
+                            left: .5rem;
+                        }
+                        .data2_1SVG {
+                            top: 1.8rem;
+                            left: -6rem;
+                        }
+                        .data2_2SVG {
+                            top: 1rem;
+                            left: .5rem;
+                        }
+                        .data3_1SVG {
+                            top: 1.8rem;
+                            left: -6rem;
+                        }
+                        .data3_2SVG {
+                            top: 1rem;
+                            left: .5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

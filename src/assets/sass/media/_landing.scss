@@ -1,0 +1,9 @@
+#app {
+    #landing {
+        @media only screen and (max-width: 1000px) {
+            .line-drawing {
+                margin-top: 15rem !important;
+            } 
+        }
+    }
+}

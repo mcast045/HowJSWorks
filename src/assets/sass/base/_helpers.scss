@@ -1,0 +1,87 @@
+.bubbleText {
+    text-align: left;
+    font-size: 1.3rem;
+    background-color: $bg-light-1;
+    color: $bg-dark-1;
+    padding: $REM-1;
+    width: 40%; 
+    height: inherit;
+}
+
+.relative {
+    position: relative;
+}
+
+.sectionHeader {
+    padding: 5rem 0 5rem 5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .sectionHeader {
+        text-align: center;
+        padding: 2rem 0;
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border {
+    border: 1px solid $bg-light-1;
+    border-radius: $REM-1;
+    padding: $REM-2;
+}
+
+code {
+    color: $bg-light-1;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.data1_1SVG,
+.data1_2SVG,
+.data2_1SVG,
+.data2_2SVG,
+.data3_1SVG {
+    position: absolute;
+    z-index: -1;
+}
+.data1 {
+    grid-column: 4 / -1;
+    font-size: $REM-3;
+}
+.data2 {
+    grid-column: 2 / span 2;
+    font-size: $REM-3;
+}
+.data3 {
+    grid-column: 6 / -1;
+    font-size: $REM-3;
+}
+.data4 {
+    grid-column: 1 / span 1;
+    font-size: $REM-3;
+}
+.data5 {
+    grid-column: 3 / span 1;
+    font-size: $REM-3;
+}
+.data6 {
+    grid-column: 5 / span 1;
+    font-size: $REM-3;
+}
+.data7 {
+    grid-column: 7 / span 1;
+    font-size: $REM-3;
+}
+
+@media only screen and (max-width: 1328px) {
+    .bubbleText {
+        font-size: 1rem;
+    }
+}

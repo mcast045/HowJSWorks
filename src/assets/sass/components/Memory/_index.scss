@@ -1,0 +1,10 @@
+@import './container';
+
+#app {
+    #memory {
+        height: $base-height;
+        color: $bg-light-1;
+        background: linear-gradient(to bottom left, $bg-dark-1, $bg-dark-2);
+        font-size: 5rem;
+    }
+}

@@ -1,0 +1,7 @@
+@import './container.scss';
+
+#app {
+    #stack {
+        background: linear-gradient(to left, $bg-dark-2, $bg-dark-1);
+    }
+}
